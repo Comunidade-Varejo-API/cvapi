@@ -10,4 +10,8 @@ class ProdutosService(
 ) {
 
     fun getProdutos(): List<Produto> = repository.getProdutos()
+    fun getProdutoPorId(id: Long): List<Produto> {
+        return repository.getProdutosPorId(id)
+    }
+    fun getProdutosId():List<Long> = repository.getProdutosId()
 }
